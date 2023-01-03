@@ -24,11 +24,11 @@ style:
   # Article image align position
   article_img_align: center # value: left | center
 
-  # Left side width
-  left_side_width: 240px #sidebar width, for toc
+  # Right side width
+  right_side_width: 210px #sidebar width, for toc
 
   # Content area max width
-  content_max_width: 960px #content max width, for article
+  content_max_width: 1000px #content max width, for article
 
   #navigation bar background color (from left to right)
   nav_color: 
@@ -45,6 +45,13 @@ style:
   first_screen:
     enable: true
     background_img: /images/oMureGJWpIZwvDi-1.webp # background image of the first screen, use relative path or external link
+    background_image:
+      light: /images/oMureGJWpIZwvDi-1.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
+      dark: /images/oMureGJWpIZwvDi-1.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
+    title_color:
+      light: "#d1d1b6" # first screen title color (light mode)
+      dark: "#d1d1b6" # first screen title color (dark mode)
+
     description: 自己的后院，大家的茶馆 # the title in the middle of the first screen
 
   # Scroll style settings
@@ -68,10 +75,17 @@ social_contact: # social contact icons in the first screen, you can add more by 
 # Navigation menu
 # ---------------------------------------------------------------------------------------
 menu: #you can customize
-  Home: /
-  Archives: /archives
-  # Status: https://status.evanluo.top/
-  Links: /links
+  Home: 
+    path: / 
+    icon: fa-regular fa-house # can be empty
+  Archives: 
+    path: /archives 
+    icon: fa-regular fa-archive # can be empty
+  Links: 
+    icon: fa-regular fa-link
+    submenus:
+      Friends: /links
+      Github: https://github.com/MineCreeper86
   # About: /about
   # Changelog: /changelog
   # ......
@@ -80,6 +94,7 @@ menu: #you can customize
 # Home page article block display settings
 # ---------------------------------------------------------------------------------------
 home_article:
+  date_format: auto # date format in home page article block, value: auto | relative | YYYY-MM-DD | YYYY.MM.DD HH:mm:ss | DD/MM/YYYY | and etc. Support moment js format, see: https://momentjscom.readthedocs.io/en/latest/moment/04-displaying/01-format/
   category:
     enable: true # show category in home page article block
     limit: 3 # max number of categories shown in home page article block
@@ -109,8 +124,9 @@ post:
 # ---------------------------------------------------------------------------------------
 # Code copy
 # ---------------------------------------------------------------------------------------
-code_copy:
-  enable: true
+code_block:
+  copy: true # enable code copy button
+  style: mac # mac | simple
 
 # ---------------------------------------------------------------------------------------
 # Table of Contents in the Sidebar
@@ -166,7 +182,6 @@ comment:
   waline:
     serverUrl: https://waline.minecreeper.top # Waline server url(vercel) example: https://example.example.com
     lang: zh-CN # Waline language, default: zh-CN. See: https://waline.js.org/guide/client/i18n.html
-    dark: auto # Waline dark mode, default: auto. See: https://waline.js.org/reference/component.html#dark
   
   # Gitalk
   # See: https://github.com/gitalk/gitalk
@@ -182,6 +197,12 @@ comment:
     visitor: true
     env_id: # Vercel or Tencent Cloud Function environment ID
     region: # environment region. If select Guangzhou, fill in "ap-guangzhou". (optional)
+
+# ---------------------------------------------------------------------------------------
+# Friend Links page
+# ---------------------------------------------------------------------------------------
+friend_links:
+  columns: 2 # number of columns. 2 or 3
 
 # ---------------------------------------------------------------------------------------
 # RSS
@@ -201,7 +222,7 @@ lazyload:
 # CDN
 # ---------------------------------------------------------------------------------------
 cdn:
-  enable: false
+  enable: true
 
 # ---------------------------------------------------------------------------------------
 # PJAX
@@ -210,13 +231,18 @@ pjax:
   enable: true
 
 # ---------------------------------------------------------------------------------------
+# Fontawesome
+# ---------------------------------------------------------------------------------------
+fontawesome: # select fontawesome versions you want to use, in order to reduce the loading time, select as few as possible
+  thin: false # use fontawesome thin version or not
+  light: false # use fontawesome light version or not
+  duotone: false # use fontawesome duotone version or not
+
+# ---------------------------------------------------------------------------------------
 # Footer settings
 # ---------------------------------------------------------------------------------------
 footer:
-  since: 2020 # the starting year of your website, Can be null
+  runtime: true # show website running time or not
+  start_time: 2022/02/16 11:45:14 # the starting time of your website, format: yyyy/mm/dd hh:mm:ss
+  customize:  # customize footer message, can be html code
   icp: 清ICP备2022089064号 # ICP record number of your website, Can be null
-
-# ---------------------------------------------------------------------------------------
-# Redefine Theme version (Please don't modify)
-# ---------------------------------------------------------------------------------------
-version: 0.3.2

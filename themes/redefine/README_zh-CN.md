@@ -19,12 +19,9 @@
 
 ## 📷 屏幕截图
 
-<img width="1420" alt="Screen Shot 2022-11-11 at 8 55 39 PM" src="https://user-images.githubusercontent.com/68590232/201453764-75276390-8888-4c0f-9ccc-497cede23e00.png">
-
-<img width="1428" alt="Screen Shot 2022-11-11 at 8 56 03 PM" src="https://user-images.githubusercontent.com/68590232/201453766-361b2dda-3ef9-4464-acde-42895af192a0.png">
-
-<img width="1428" alt="Screen Shot 2022-11-11 at 8 56 25 PM" src="https://user-images.githubusercontent.com/68590232/201453768-6b3a3a2e-5d2a-4683-b207-bc08ce55812c.png">
-
+![redefine-rendered-1](https://user-images.githubusercontent.com/68590232/208305420-b3096ebf-b819-4b70-aad2-efca12818295.png)
+![redefine-rendered-2](https://user-images.githubusercontent.com/68590232/208305422-f4b2fed2-c144-474c-8d3c-acd52e4f3ff5.png)
+![redefine-rendered-3](https://user-images.githubusercontent.com/68590232/208305423-28960206-96d3-4af8-b76e-d687fb8a0f38.png)
 
 ## 🌐 在线演示站
 
@@ -43,7 +40,10 @@
 
 - 代码块语言显示
 - Light/Dark 模式切换
-- Font Awesome 6.1.0 Pro（包含 Duotone/Regular/Thin 等不同样式）
+- [Font Awesome 6.1.0 Pro](https://redefine-docs.evanluo.top/docs/configuration-guide/fontawesome)（包含 Duotone/Regular/Thin 等不同样式）
+- [下拉菜单](https://redefine-docs.evanluo.top/docs/configuration-guide/menu)
+- [可自定义页脚](https://redefine-docs.evanluo.top/docs/configuration-guide/footer)
+- [网站运行时间显示](https://redefine-docs.evanluo.top/docs/configuration-guide/footer)
 
 ## ☁️ 安装
 
@@ -102,10 +102,6 @@ $ git clone https://github.com/EvanNotFound/hexo-theme-redefine.git themes/redef
 如有问题，请发邮件到 [contact@evanluo.top](mailto:contact@evanluo.top). 我会及时回复
 
 如果我做的主题还不错的话，欢迎给我 Github 点个 Star，谢谢
-
-或者，给我买一杯咖啡？
-
-<img src="https://user-images.githubusercontent.com/68590232/195916630-2785ca44-1199-45c6-8b57-1472ec3c6906.JPG" referrerpolicy="no-referrer" alt="IMG_7991" style="zoom:30%">
 
 
 

@@ -48,8 +48,8 @@ style:
       light: /images/oMureGJWpIZwvDi-1.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
       dark: /images/oMureGJWpIZwvDi-1.webp # background image of the first screen, use relative path or external link (if your website is in subdirectory, use external link)
     title_color:
-      light: "#0C090A" # first screen title color (light mode)
-      dark: "#0C090A" # first screen title color (dark mode)
+      light: "#FFF" # first screen title color (light mode)
+      dark: "#FFF" # first screen title color (dark mode)
 
     description: 自己的后院，大家的茶馆 # the title in the middle of the first screen
 

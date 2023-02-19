@@ -244,7 +244,7 @@ footer:
   runtime: true # show website running time or not
   start_time: 2022/02/16 11:45:14 # the starting time of your website, format: yyyy/mm/dd hh:mm:ss
   customize:  # customize footer message, can be html code
-  icp: <a href="https://icp.gov.moe/?keyword=20230969" target="_blank">萌ICP备20230969号</a> # ICP record number of your website, Can be null
+  icp: （https://icp.gov.moe/?keyword=20230969）萌ICP备20230969号 # ICP record number of your website, Can be null
   
 mermaid: 
   enable: true  # default true 

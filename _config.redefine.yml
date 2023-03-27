@@ -20,6 +20,9 @@ style:
 
   # Favicon (You can use local image or image external link)
   favicon: /images/favicon.png # favicon of the site
+  og_image: # og:image of the site
+    enable: false
+    image_url: # image url
 
   # Article image align position
   article_img_align: center # value: left | center
@@ -50,15 +53,43 @@ style:
     title_color:
       light: "#FFF" # first screen title color (light mode)
       dark: "#FFF" # first screen title color (dark mode)
-
-    description: 自己的后院，大家的茶馆 # the title in the middle of the first screen
-
+    font_sizes:
+      title: 2.8rem # first screen title font size
+      subtitle: 1.5rem # first screen subtitle font size
+    line_height: 1.2 # first screen title line height
+    title: 自己的后院，大家的茶馆 # the title in the middle of the first screen. HTML supported (e.g. svg html code of your logo)
+    subtitle: 
+      enable: false
+      list: []
+    custom_font: # custom font for the first screen
+      enable: false
+      font_family: # the font family name of the url below
+      font_url:  # The url to the font stylesheet file (css file)
   # Scroll style settings
   scroll:
     progress_bar: # reading progress bar
       enable: true 
     percent: # reading progress percent
       enable: false
+
+# ---------------------------------------------------------------------------------------
+# Custom Settings
+# ---------------------------------------------------------------------------------------
+custom:
+  font: # custom font for the whole site
+    chinese: # custom font for Chinese
+      enable: false
+      font_family:  # the font family name of the url below
+      font_url:  # The url to the font stylesheet file (css)
+    english: # custom font for English
+      enable: false
+      font_family:  # the font family name of the url below
+      font_url:  # The url to the font stylesheet file (css)
+  formats: # custom font styles for the whole site
+    font_size: 16px # font size
+    line_height: 1.5 # line height
+
+
 
 # ---------------------------------------------------------------------------------------
 # Social contact link
@@ -126,6 +157,10 @@ post:
 code_block:
   copy: true # enable code copy button
   style: mac # mac | simple
+  custom_font: # custom font family, default: Ubuntu Mono
+    enable: false
+    font_family: # font family name
+    font_url: # The url to the font stylesheet file (css file)
 
 # ---------------------------------------------------------------------------------------
 # Table of Contents in the Sidebar
@@ -203,6 +238,12 @@ comment:
 friend_links:
   columns: 2 # number of columns. 2 or 3
 
+  # ---------------------------------------------------------------------------------------
+# Tags Page
+# ---------------------------------------------------------------------------------------
+tags:
+  style: blur # blur | cloud
+
 # ---------------------------------------------------------------------------------------
 # RSS
 # Dependencies: hexo-generator-feed
@@ -222,6 +263,10 @@ lazyload:
 # ---------------------------------------------------------------------------------------
 cdn:
   enable: false
+  use: aliyun # values: jsdelivr | unpkg | aliyun 
+  # aliyun cdn is funded by myself, so if you want to make it work longer, please donate to me.
+  # For donation, please see https://github.com/EvanNotFound/hexo-theme-redefine/blob/dev/DONATION.md
+  # Thank you for your support.
 
 # ---------------------------------------------------------------------------------------
 # PJAX
@@ -230,29 +275,70 @@ pjax:
   enable: true
 
 # ---------------------------------------------------------------------------------------
+# Article recommendation (transplanted from Volantis)
+# ---------------------------------------------------------------------------------------
+recommended_article: # 文章推荐，需要 npm install nodejieba
+  enable: false
+  title: 推荐阅读
+  icon: fa-solid fa-bookmark
+  max_count: 3
+  placeholder_img: /images/wallhaven-wqery6-light.webp
+  # 不展示文章推荐：
+  # front-matter 使用 skip_recommended_article: true 关闭
+  # 不在以下文件夹文章中展示文章推荐 根目录是source/
+  skip_dirs:
+    - wiki/
+
+# ---------------------------------------------------------------------------------------
 # Fontawesome
 # ---------------------------------------------------------------------------------------
 fontawesome: # select fontawesome versions you want to use, in order to reduce the loading time, select as few as possible
   thin: false # use fontawesome thin version or not
   light: false # use fontawesome light version or not
   duotone: false # use fontawesome duotone version or not
+  sharp_solid: false # use fontawesome sharp-solid version or not
 
 # ---------------------------------------------------------------------------------------
 # Footer settings
 # ---------------------------------------------------------------------------------------
 footer:
   runtime: true # show website running time or not
+  icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>' # footer icon, write fontawesome html code here
   start_time: 2022/02/16 11:45:14 # the starting time of your website, format: yyyy/mm/dd hh:mm:ss
   customize:  # customize footer message, can be html code
   icp: # ICP record number of your website, Can be null
     enable: true
     number: 萌ICP备20230969号 # ICP record number
     url: https://icp.gov.moe/?keyword=20230969 # ICP record url
-  
-mermaid: 
-  enable: true  # default true 
-  version: "9.3.0" # default v9.3.0
-  style: # for more themes, see https://mermaid.js.org/config/theming.html
-    light: default  # default default
-    dark: dark  # default dark 
-  options:  
+
+# ---------------------------------------------------------------------------------------
+# Custom html code
+# ---------------------------------------------------------------------------------------
+inject:
+  enable: false
+  head: # inject code into <head> tag
+    - 
+    - 
+  footer: # inject code into <footer> tag
+    - 
+    - 
+
+# ---------------------------------------------------------------------------------------
+# Theme plugins
+# ---------------------------------------------------------------------------------------
+plugins:
+  aplayer: # APlayer (fixed version)
+    enable: false
+    audio:
+      - name: # audio name
+        artist: # audio artist
+        url: # audio url
+        cover: # audio cover url
+      - name: 
+        artist: 
+        url: 
+        cover: 
+  mermaid: # Mermaid JS
+    enable: true # enable mermaid or not
+    version: "9.3.0" # default v9.3.0
+

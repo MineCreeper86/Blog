@@ -170,7 +170,7 @@ navbar:
     Archives: 
       path: /archives 
       icon: fa-regular fa-archive # can be empty
-    Links: 
+    链接: 
       icon: fa-regular fa-link
       submenus:
         Friends: /links

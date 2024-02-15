@@ -111,7 +111,7 @@ home_banner:
   title: 自己的后院，大家的茶馆
   # Home banner subtitle
   subtitle:
-    text: [] # subtitle text, array
+    text: ["虽然我在这里放了个博客，但是你们别真的点进去看啊。羞死人了啊！！"] # subtitle text, array
     typing_speed: 100 # Typing speed (ms)
     backing_speed: 80 # Backing speed (ms)
     starting_delay: 500 # Start delay (ms)

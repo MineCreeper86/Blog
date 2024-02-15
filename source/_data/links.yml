@@ -1,4 +1,4 @@
-- links_category: 朋友们呀~
+- links_category: 我用力去生活的动力
   has_thumbnail: false
   list: 
     - name: Anonymous Land
@@ -13,10 +13,10 @@
 
     - name: 易姐的博客
       link: https://shakaianee.top/
-      description: 易姐的博客，一直可望不可及的技术大佬，也是个车车人。
+      description: 易姐的博客，可望不可及的技术大佬，也是车车人。
       avatar: https://s2.loli.net/2022/02/18/EnOhb1UAIJymTsQ.jpg
 
     - name: AKARI (dot) rest
       link: https://akari.rest/
-      description: 灯火あかり的博客，可爱的同龄高中生，友链私自加的。
+      description: 灯火あかり的博客，可爱的同龄人，友链私自加的。
       avatar: https://akari.rest/wp-content/uploads/2023/12/1704014300-image.jpeg

@@ -3,15 +3,20 @@
   list: 
     - name: Anonymous Land
       link: https://www.evanluo.top
-      description: Evanluo的博客，是怂恿我写博客的屑人
+      description: Evanluo的博客，是怂恿我写博客的屑人。
       avatar: https://evan.beee.top/avatar.png
 
     - name: Alex Wei的部落阁
       link: https://alexwei.top/
-      description: Alexwei的博客，卷王学长，常年不更新的老鸽子
+      description: Alexwei的博客，卷王学长，常年不更新的老鸽子。
       avatar: https://s2.loli.net/2022/02/18/iwyt6xveS2rdcCB.png
 
     - name: 易姐的博客
       link: https://shakaianee.top/
       description: 易姐的博客，一直可望不可及的技术大佬，也是个车车人。
       avatar: https://s2.loli.net/2022/02/18/EnOhb1UAIJymTsQ.jpg
+
+    - name: AKARI (dot) rest
+      link: https://akari.rest/
+      description: 灯火あかり的博客，可爱的同龄高中生，友链私自加的。
+      avatar: https://akari.rest/wp-content/uploads/2023/12/1704014300-image.jpeg

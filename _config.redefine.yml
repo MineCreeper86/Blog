@@ -12,7 +12,7 @@ info:
   # Site title
   title: 矿井小帕的茶馆
   # Author name
-  author: Minecreeper
+  author: MineCreeper
   # Site URL
   url: https://minecreeper.top
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
@@ -144,11 +144,11 @@ home_banner:
     enable: true
     # Social links
     links:
-      github: https://github.com/MineCreeper86  # your GitHub URL
+      github: https://github.com/MineCreeper86
       instagram: # your Instagram URL
       zhihu:  # your ZhiHu URL
       twitter:  # your twitter URL
-      email:  # your email
+      email:  mineralcreepers@gmail.com
       # ...... # you can add more
 # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 

@@ -2,9 +2,9 @@
   has_thumbnail: false
   list: 
     - name: Anonymous Land
-    link: https://www.evanluo.top
-    description: Evanluo的博客，是怂恿我写博客的屑人
-    avatar: https://evan.beee.top/avatar.png
+      link: https://www.evanluo.top
+      description: Evanluo的博客，是怂恿我写博客的屑人
+      avatar: https://evan.beee.top/avatar.png
 
     - name: Alex Wei的部落阁
       link: https://alexwei.top/

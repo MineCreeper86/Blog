@@ -111,11 +111,11 @@ home_banner:
   title: 自己的后院，大家的茶馆
   # Home banner subtitle
   subtitle:
-    text: ["虽然我在这里放了个博客，但是你们别真的点进去看啊。羞死人了啊！！"] # subtitle text, array
+    text: ["虽然我在这里放了个博客，但是你们别真的点进去看啊。羞死人了啊！！","我可是在平等地喜欢你们每一个人的噢！","能不能来个人把我的小窗挤爆啊，求求了。","这个博客主又不知道去干什么了，谁去抓ta回来？"] # subtitle text, array
     typing_speed: 100 # Typing speed (ms)
     backing_speed: 80 # Backing speed (ms)
-    starting_delay: 500 # Start delay (ms)
-    backing_delay: 1500 # Backing delay (ms)
+    starting_delay: 300 # Start delay (ms)
+    backing_delay: 2500 # Backing delay (ms)
     loop: true # Whether to loop
     smart_backspace: true # Whether to smart backspace
   # Color of home banner text

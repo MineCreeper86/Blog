@@ -145,10 +145,9 @@ home_banner:
     # Social links
     links:
       github: https://github.com/MineCreeper86
-      instagram: # your Instagram URL
-      zhihu:  # your ZhiHu URL
-      twitter:  # your twitter URL
       email:  mineralcreepers@gmail.com
+      telegram: https://t.me/PatchiWitch
+      bilibili: https://space.bilibili.com/393479166
       # ...... # you can add more
 # HOME BANNER <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
